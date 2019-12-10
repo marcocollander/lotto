@@ -9,13 +9,14 @@ html{
 }
 
 header {
-    width: 100%;
+    max-width: 700px;
     background-color: firebrick;
     color: white;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.2rem;
     border-radius: 8px;
+    margin: 0 auto;
 }
 
 h1, h3 {
@@ -34,7 +35,6 @@ h3 {
 
 main {
     max-width: 700px;
-    width: 80%;
     margin: 0 auto;
 }
 
@@ -58,7 +58,6 @@ p {
 a {
     text-decoration: none;
     color: blueviolet;
-    target: _blank;
 }
 
 a:hover {
@@ -67,7 +66,8 @@ a:hover {
 }
 
 button {
-    border-radius: 5px;
+    border-radius: 3px;
+    border: none;
     width: 4.5rem;
     padding: 0.4rem;
     display: inline-block;
@@ -89,6 +89,8 @@ button {
 }
 
 footer {
+    max-width: 700px;
+    margin: 0 auto;
     position: fixed;
     left: 10px;
     right: 10px;

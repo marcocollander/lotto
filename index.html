@@ -2,31 +2,35 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Losuj przed losowaniem!</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Losuj przed losowaniem!</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Lotto</h1>
-        <h3>6 z 49</h3>
-    </header>
-    <main>
-        <section>
-            <p>Wylosuj swoje szczęśliwe liczby przed najbliższym losowaniem.
-                Losowania Lotto i Lotto Plus odbywają się w każdy wtorek, czwartek
-                i sobotę o godz. 21:40 i są transmitowane na antenie TVP Info i
-                na stronie <a href="https://www.lotto.pl." target="_blank" rel="nofollow noopener">lotto.</a></p>
-            <button onclick="question()" id="question">Wylosuj</button>
-            <button onclick="reset()" id="reset">Reset</button>
-        </section>
-        <section id="random-id" class="random">
+  <header>
+    <h1>Lotto</h1>
+    <h3>6 z 49</h3>
+  </header>
+  <main>
+    <section>
+      <p>Wylosuj swoje szczęśliwe liczby przed najbliższym losowaniem.
+        Losowania Lotto i Lotto Plus odbywają się w każdy wtorek, czwartek
+        i sobotę o godz. 21:40 i są transmitowane na antenie TVP Info i
+        na stronie <a href="https://www.lotto.pl." target="_blank" rel="nofollow noopener">lotto.</a></p>
+      <button id="random">Wylosuj</button>
+      <button id="reset">Reset</button>
+    </section>
+    <section id="random-id" class="random">
 
-        </section>
-    </main>
-    <footer>&copy; All rights reserved <small>by author: Zenon Marek Raubuć - ostatnio modyfikowano 16-06-2019 </small></footer>
-    <script src="script.js"></script>
-</body></html>;
+    </section>
+  </main>
+  <footer>&copy; All rights reserved <small>by author: Zenon Marek Raubuć - ostatnio modyfikowano 10-12-2019 </small>
+  </footer>
+  <script src="Lotto.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
