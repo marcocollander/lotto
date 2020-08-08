@@ -1,21 +1,20 @@
-'use strict';
-
-class Lotto {
-  static counter = 0; 
-  constructor(){
+export class Lotto {
+  static counter = 0;
+  constructor() {
     this.fillArray();
     Lotto.counter++;
+    console.log(`Powstał obiekt Lotto`);
   }
 
-  fillArray(){
+  fillArray() {
     this.numbers = [];
-    for(let i = 0; i < 49; i++){
+    for (let i = 0; i < 49; i++) {
       this.numbers[i] = i + 1;
     }
     return this.numbers;
   }
 
-  randomNumbers(){
+  randomNumbers() {
     const result = [];
     let n = 49;
     for (let i = 0; i < 6; i++) {
