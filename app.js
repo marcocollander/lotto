@@ -1,35 +1,36 @@
 import { Lotto } from './Lotto.js';
 
-console.log('Aplikacja wystartowała');
-
 const app = {
   init: function () {
     this.initLotto();
-    console.log(`Aplikacja została zainicjalizowana`);
+    //console.log(app);
   },
 
   initLotto: function () {
     const btn = document.getElementById('random');
     const btnReset = document.getElementById('reset');
+    const display = document.getElementById('random-id');
 
     btn.addEventListener('click', function () {
       this.lotto = new Lotto();
 
       if (Lotto.counter <= 10) {
-        document.getElementById('random-id').innerHTML +=
-          this.lotto.randomNumbers().join(', ') + '<br>';
+        display.innerHTML += this.lotto.randomNumbers().join(', ') + '<br>';
       } else {
-        document.getElementById('random-id').innerHTML += 'koniec - resetuj';
-        document.getElementById('random').style.visibility = 'hidden';
+        display.innerHTML += 'koniec - resetuj';
+        btn.style.visibility = 'hidden';
         Lotto.counter = 0;
       }
+
     });
 
     btnReset.addEventListener('click', function () {
-      document.getElementById('random-id').innerHTML = ' ';
-      document.getElementById('random').style.visibility = 'visible';
+      display.innerHTML = ' ';
+      btn.style.visibility = 'visible';
     });
   },
 };
 
 app.init();
+
+console.log(app);
